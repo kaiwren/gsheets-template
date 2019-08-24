@@ -1,6 +1,8 @@
 # GSheets Project Template
 
-This project serves as a template for GSheets AppScripts Projects for small data processing and analysis projects. [Source on Github](https://github.com/kaiwren/gsheets-template).
+[Source on Github](https://github.com/kaiwren/gsheets-template)
+
+This project serves as a template for GSheets AppScripts Projects for small data processing and analysis projects, especially those which you don't want to expose to unknown addons.
 
 It includes some helpers, some wrappers, some libraries and some conventions to make life easier.
 

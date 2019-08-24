@@ -12,3 +12,11 @@ App.prototype = {
     L.d("___ Starting main() ___");
   }
 }
+
+/* 
+ * Convenience function to support Cmd + R
+ * for easy debugging in the AppScript Online Editor
+*/
+function main() {
+  new App().main();
+}
