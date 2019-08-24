@@ -14,6 +14,7 @@ This project serves as a template for GSheets AppScripts Projects for small data
 	* Clone the AppsScript project to the local environment `clasp clone <scriptId>`
 	* Add library
 		* `git submodule add https://github.com/kaiwren/gsheets-lib.git lib`
+		* To update the library `git pull --recurse-submodules`
 		
 ## Push from local to script.google.com
 
