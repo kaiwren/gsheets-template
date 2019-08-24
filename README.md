@@ -29,14 +29,12 @@ Once you clone this project, it should be readonly via git except for the `lib` 
       * Clone the AppsScript project to the local dir with `clasp clone <scriptId>`
     * Copy the contents of gsheets-template over to the dir
       * Ensure that the `.claspignore` file is also copied over
-      * Use `clasp status` to verify that the files copeid from the template under `src/` and `lib/` are not being ignored
-    
-## Push from local to script.google.com
-
-* Enable Apps Script API: https://script.google.com/home/usersettings
-* Remember to update CHANGELOG.js as needed
-* `clasp status`
-* `clasp push`
+      * Use `clasp status` to verify that the files copied from the template under `src/` and `lib/` are not being ignored
+      * To push from local to script.google.com
+        * Enable Apps Script API: https://script.google.com/home/usersettings
+        * Remember to update CHANGELOG.js as needed
+        * `clasp status` to see which files will be pushed
+        * `clasp push`
 
 ## Local vs script.google.com
 
