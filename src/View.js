@@ -9,23 +9,23 @@ var View = function() {
 View.prototype = {
   renderMenu: function() {
     this.ui.createMenu('New Menu ' + App.version)
-      .addItem('Action 1', 'View.actionOneMenuItem')
-      .addItem('Action 2', 'View.actionTwoMenuItem')
+      .addItem('Action 1', 'actionOneMenuItem')
+      .addItem('Action 2', 'actionTwoMenuItem')
       .addSeparator()
-      .addItem('Changelog', 'View.changelogMenuItem')
+      .addItem('Changelog', 'changelogMenuItem')
       .addToUi();    
   }
 }
 
-View.actionOneMenuItem = function() {
+function actionOneMenuItem() {
   new App.main();
   SpreadsheetApp.getUi().alert('Done!');
 }
 
-View.actionTwoMenuItem = function() {
+function actionTwoMenuItem() {
   SpreadsheetApp.getUi().alert('Done!');
 }
 
-View.changelogMenuItem = function() {
+function changelogMenuItem() {
   SpreadsheetApp.getUi().alert(JSON.stringify(CHANGELOG, null, 2));
 }
