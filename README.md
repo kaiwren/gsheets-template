@@ -22,9 +22,8 @@ Once you clone this project, you should only need to update the `lib` submodule 
 		* Create a corresponding AppsScript Project: `Tools` -> `Script Editor`
 		* Get `scriptId` from Script Editor AppsScript Project: `File` -> `Project Properties`
 	* Clone the AppsScript project to the local environment `clasp clone <scriptId>`
-	* Add library
-		* `git submodule add https://github.com/kaiwren/gsheets-lib.git lib`
-		* To update the library `git pull --recurse-submodules` or `git submodule update --remote --recursive`
+	* Update library
+		* `git pull --recurse-submodules` or `git submodule update --remote --recursive`
 		
 ## Push from local to script.google.com
 
