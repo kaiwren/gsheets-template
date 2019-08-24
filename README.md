@@ -1,4 +1,6 @@
-# Structure
+# GSheets Project Template
+
+This project serves as a template for GSheets AppScripts Projects for small data processing and analysis projects. [Source on Github](https://github.com/kaiwren/gsheets-template).
 
 ## Setup
 
@@ -10,6 +12,8 @@
 		* Create a corresponding AppsScript Project: `Tools` -> `Script Editor`
 		* Get `scriptId` from Script Editor AppsScript Project: `File` -> `Project Properties`
 	* Clone the AppsScript project to the local environment `clasp clone <scriptId>`
+	* Add library
+		* `git submodule add https://github.com/kaiwren/gsheets-lib.git lib`
 		
 ## Push from local to script.google.com
 
@@ -32,7 +36,3 @@
 │   ├─ slides.js
 │   └─ sheets.js
 ```
-
-## Helper Libraries
-
-https://github.com/kaiwren/gsheets-lib.git is added as a submodule
