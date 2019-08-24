@@ -1,23 +1,31 @@
 function onOpen() {
-  var ui = SpreadsheetApp.getUi();
-  ui.createMenu('New Menu ' + App.version)
-    .addItem('Action 1', 'actionOneMenuItem')
-    .addItem('Action 2', 'actionTwoMenuItem')
-    .addSeparator()
-    .addItem('Changelog', 'changelogMenuItem')  
-    .addToUi();
+  new View().renderMenu();
 }
 
-function actionOneMenuItem() {
-	new App().main();
+var View = function() {
+  this.ui = SpreadsheetApp.getUi();
+}
+
+View.prototype = {
+  renderMenu: function() {
+    this.ui.createMenu('New Menu ' + App.version)
+      .addItem('Action 1', 'View.actionOneMenuItem')
+      .addItem('Action 2', 'View.actionTwoMenuItem')
+      .addSeparator()
+      .addItem('Changelog', 'View.changelogMenuItem')
+      .addToUi();    
+  }
+}
+
+View.actionOneMenuItem = function() {
+  new App.main();
   SpreadsheetApp.getUi().alert('Done!');
 }
 
-function actionTwoMenuItem() {
-  SpreadsheetApp.getUi().alert('Done Two!');
+View.actionTwoMenuItem = function() {
+  SpreadsheetApp.getUi().alert('Done!');
 }
 
-function changelogMenuItem() {
-  SpreadsheetApp.getUi()
-     .alert(JSON.stringify(CHANGELOG, null, 2));
+View.changelogMenuItem = function() {
+  SpreadsheetApp.getUi().alert(JSON.stringify(CHANGELOG, null, 2));
 }
