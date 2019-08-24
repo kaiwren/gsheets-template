@@ -7,9 +7,8 @@ var App = function() {
 App.version = "0.0.1";
 
 App.prototype = {
-	main: function() {
+  main: function() {
     var self = this;
-
-    L.d("___ Starting main() ___");    
-	}
+    L.d("___ Starting main() ___");
+  }
 }

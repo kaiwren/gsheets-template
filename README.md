@@ -2,6 +2,12 @@
 
 This project serves as a template for GSheets AppScripts Projects for small data processing and analysis projects. [Source on Github](https://github.com/kaiwren/gsheets-template).
 
+## SpreadSheet Conventions
+
+* Segregate sheets in a spreadsheet into readonly and writeonly as far as possible 
+	* Name readonly sheets with prefix "DB"
+	* Name writeonly sheets with prefix "OP"
+
 ## Setup
 
 * https://codelabs.developers.google.com/codelabs/clasp/#0
@@ -19,6 +25,7 @@ This project serves as a template for GSheets AppScripts Projects for small data
 ## Push from local to script.google.com
 
 * Enable Apps Script API: https://script.google.com/home/usersettings
+* Remember to update CHANGELOG.js as needed
 * `clasp status`
 * `clasp push`
 
