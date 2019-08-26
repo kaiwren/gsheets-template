@@ -2,7 +2,9 @@
 
 [Source on Github](https://github.com/kaiwren/gsheets-template)
 
-This project serves as a convention driven template for GSheets AppScripts Projects for small data processing and analysis projects, especially those which you don't want to expose to unknown addons.
+This project serves as a convention driven template for GSheets AppScripts Projects for small data processing and analysis projects.
+
+I've been using this to make my life easier when working on administrative tasks, especially those which you don't want to expose the data in the sheet to unknown addons (compensation, performance review analysis etc.)
 
 It includes some tools, some helpers, some wrappers, some libraries and some conventions to make life easier.
 
