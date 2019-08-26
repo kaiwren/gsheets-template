@@ -8,7 +8,7 @@ I've been using this to make my life easier when working on administrative tasks
 
 It includes some tools, some helpers, some wrappers, some libraries and some conventions to make life easier.
 
-Once you clone this project, it should be readonly via git except for the `lib` submodule which is maintained in [this project](https://github.com/kaiwren/gsheets-lib).  All your pushes will be via `clasp` to script.google.com and not `git` to github.com.
+To use this, fork this project and use it as a starting point. Note that the `lib` submodule which contains wrappers/libs is maintained in [this project](https://github.com/kaiwren/gsheets-lib).
 
 ## Spreadsheet Conventions
 
@@ -18,7 +18,12 @@ Once you clone this project, it should be readonly via git except for the `lib` 
 
 ## Dev Setup
 
-* AppScript projects use [Clasp](https://codelabs.developers.google.com/codelabs/clasp/#0) to manage push/pull/deploy
+AppScript projects use [Clasp](https://codelabs.developers.google.com/codelabs/clasp/#0) to manage push/pull/deploy to script.google.com
+
+I advise versioning the codebase both via `git` and script.google.com (through `clasp`) because `git` version control is far easier to use. 
+
+To get started with setup:
+
   * Install Nodejs
   * `npm i @google/clasp -g `
   * Update library
