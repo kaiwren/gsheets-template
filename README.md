@@ -1,22 +1,22 @@
-# GSheets Project Template
+# GSheets AppScript Project Template
 
 [Source on Github](https://github.com/kaiwren/gsheets-template)
 
-This project serves as a template for GSheets AppScripts Projects for small data processing and analysis projects, especially those which you don't want to expose to unknown addons.
+This project serves as a convention driven template for GSheets AppScripts Projects for small data processing and analysis projects, especially those which you don't want to expose to unknown addons.
 
-It includes some helpers, some wrappers, some libraries and some conventions to make life easier.
+It includes some tools, some helpers, some wrappers, some libraries and some conventions to make life easier.
 
 Once you clone this project, it should be readonly via git except for the `lib` submodule.  All your pushes will be via `clasp` to script.google.com and not `git` to github.com.
 
-## SpreadSheet Conventions
+## Spreadsheet Conventions
 
 * Segregate sheets in a spreadsheet into readonly and writeonly as far as possible 
   * Name readonly sheets with prefix "DB"
   * Name writeonly sheets with prefix "OP"
 
-## Setup
+## Dev Setup
 
-* https://codelabs.developers.google.com/codelabs/clasp/#0
+* AppScript projects use [Clasp](https://codelabs.developers.google.com/codelabs/clasp/#0) to manage push/pull/deploy
   * Install Nodejs
   * `npm i @google/clasp -g `
   * Update library
@@ -35,11 +35,8 @@ Once you clone this project, it should be readonly via git except for the `lib` 
         * Remember to update CHANGELOG.js as needed
         * `clasp status` to see which files will be pushed
         * `clasp push`
-
-## Local vs script.google.com
-
-* Local folder structures are converted to flat stuctures on `clasp push`.
-* Local `.js` files become `.gs` on `clasp push`
+      * Local folder structures are converted to flat stuctures on `clasp push`.
+      * Local `.js` files become `.gs` on `clasp push`
 
 ```
 # On script.google.com:
@@ -48,6 +45,6 @@ Once you clone this project, it should be readonly via git except for the `lib` 
 
 # Locally:
 ├── tests/
-│   ├─ slides.js
-│   └─ sheets.js
+    ├─ slides.js
+    └─ sheets.js
 ```
