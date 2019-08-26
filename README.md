@@ -6,7 +6,7 @@ This project serves as a convention driven template for GSheets AppScripts Proje
 
 It includes some tools, some helpers, some wrappers, some libraries and some conventions to make life easier.
 
-Once you clone this project, it should be readonly via git except for the `lib` submodule.  All your pushes will be via `clasp` to script.google.com and not `git` to github.com.
+Once you clone this project, it should be readonly via git except for the `lib` submodule which is maintained in [this project](https://github.com/kaiwren/gsheets-lib).  All your pushes will be via `clasp` to script.google.com and not `git` to github.com.
 
 ## Spreadsheet Conventions
 
