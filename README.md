@@ -40,7 +40,7 @@ To get started with setup:
     - CHANGELOG.js
     - README.md
   ```
-    
+  
 * Update gsheets-lib library and link to a Google sheet
   * `git pull --recurse-submodules` or `git submodule update --remote --recursive`
   * `clasp login`
