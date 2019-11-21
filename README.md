@@ -29,6 +29,7 @@ To get started with setup:
   * Create your new project dir `your-project`
     * Initialize a new git repo
     * Copy over the following files and dirs
+    * Add the gsheets-lib project as a submodule `git submodule add https://github.com/kaiwren/gsheets-lib.git lib`
     ```
     |
     - src
