@@ -18,7 +18,7 @@ To use this, fork this project and use it as a starting point. Note that the `li
 
 ## Dev Setup
 
-AppScript projects use [Clasp](https://codelabs.developers.google.com/codelabs/clasp/#0) to manage push/pull/deploy to script.google.com
+AppScript projects use Clasp[Website](https://codelabs.developers.google.com/codelabs/clasp/#0)[Github](https://github.com/google/clasp) to manage push/pull/deploy to script.google.com
 
 I advise versioning the codebase both via `git` and script.google.com (through `clasp`) because `git` version control is far easier to use. 
 
